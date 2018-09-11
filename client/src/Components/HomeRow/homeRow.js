@@ -1,17 +1,15 @@
 import React from "react";
 import "./homeRow.css";
 
-// var styling={
-//   backgroundImage: `url(${Background})`
-// }
-//Create the Header of our homepage as a component.
 const HomeRow = props =>
   <div className="homeRow">
 
-	    <div className="imageHolder" style={{ backgroundImage: `url(${props.image})` }}>
-        <p>text</p>
+	    <div id={props.title.toLowerCase()} className="imageHolder" onClick={props.click} style={{ backgroundImage: `url(${props.image})` }}>
+        <div className={props.titleClass}>{props.title}</div>
       </div>
-
+      <div id={`${props.title.toLowerCase()}Info`} className={`information ${props.description}`} style={{display:'none'}}>
+        {props.descriptionText}
+      </div>
   </div>
 
 export default HomeRow;
