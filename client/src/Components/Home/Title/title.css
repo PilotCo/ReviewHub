@@ -1,0 +1,44 @@
+body{
+    background: white;
+    margin: 0px;
+}
+
+.title{
+    
+    width: 100%;
+    /* background-color: rgb(101, 100, 100); */
+    display: inline-block;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border-bottom: 2px solid rgb(53, 187, 131);
+}
+#siteTitle{
+    
+    display: inline-block;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 1px 2px 8px rgb(53, 187, 131);
+    color: white;
+    margin: 20px 20px 20px 20px;
+}
+#logo{
+    float:right;
+    color: rgb(53, 187, 131);
+    margin-right: 5%;
+    position: absolute;
+    right: 10px;
+    top:30px;
+    /* bottom: -30px; */
+    
+}
+
+@media screen and (max-width: 992px) {
+    #logo {
+        float: none;
+        position: static;
+        right: 0;
+        top:0;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+  }
